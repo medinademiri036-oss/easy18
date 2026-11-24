@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS 2D Transforms and Transitions</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: royalblue;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 20px;
+            border-radius: 15px;
+
+            /* Smooth transition */
+            transition: transform 0.5s ease,
+                        background-color 0.5s ease;
+        }
+
+        /* Hover transformation */
+        .box:hover {
+            transform: rotate(15deg) scale(1.2);
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        Hover Over Me!
+    </div>
+
+</body>
+</html>
